@@ -15,3 +15,7 @@ export class SentifyAssessmentStack extends Stack {
     
   }
 }
+
+const app = new App();
+new SentifyAssessmentStack(app, "the-only-stack-for-now");
+app.synth();

@@ -1,8 +1,10 @@
-# Welcome to your CDK TypeScript project
+# Sentify Challenge
 
-This is a blank project for TypeScript development with CDK.
+This is a sample project for Sentify. The challenge is to automate the creation of an encrypted S3 bucket using the AWS CDK, written in TypeScript.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# Status
+
+Code written to set up an encrypted S3 bucket, not yet tested. Next step: write a fine-grained assertion test.
 
 ## Useful commands
 
@@ -12,3 +14,5 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 * `cdk deploy`      deploy this stack to your default AWS account/region
 * `cdk diff`        compare deployed stack with current state
 * `cdk synth`       emits the synthesized CloudFormation template
+
+The `cdk.json` file tells the CDK Toolkit how to execute this app.
