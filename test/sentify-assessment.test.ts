@@ -11,6 +11,12 @@ test('Encrypted S3 Bucket Created', () => {
     template.resourceCountIs("AWS::S3::Bucket", 1);
     // Assert that the bucket is encrypted with a key managed by S3
     template.hasResourceProperties('AWS::S3::Bucket', {
-        encryption: aws_s3.BucketEncryption.S3_MANAGED,
-    });
+        "BucketEncryption": {
+            "ServerSideEncryptionConfiguration": [{
+                "ServerSideEncryptionByDefault": {
+                    "SSEAlgorithm": "AES256"
+                }
+            }]
+        },
+    }); 
 });
